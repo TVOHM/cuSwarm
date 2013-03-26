@@ -124,30 +124,32 @@ Variables</h2></td></tr>
 <div class="line">    <span class="stringliteral">&quot;#version 150\n&quot;</span></div>
 <div class="line">    <span class="stringliteral">&quot;layout (points) in;\n&quot;</span></div>
 <div class="line">    <span class="stringliteral">&quot;layout (triangle_strip, max_vertices = 4) out;\n&quot;</span></div>
+<div class="line">    <span class="stringliteral">&quot;uniform float size = 2.5;\n&quot;</span></div>
 <div class="line">    <span class="stringliteral">&quot;void main(void)\n&quot;</span></div>
 <div class="line">    <span class="stringliteral">&quot;{\n&quot;</span></div>
 <div class="line">    <span class="stringliteral">&quot;   gl_Position = gl_in[0].gl_Position;\n&quot;</span></div>
+<div class="line">    <span class="stringliteral">&quot;   gl_Position.y-=size;\n&quot;</span></div>
+<div class="line">    <span class="stringliteral">&quot;   gl_Position.x-=size;\n&quot;</span></div>
 <div class="line">    <span class="stringliteral">&quot;   EmitVertex();\n&quot;</span></div>
-<div class="line">    <span class="stringliteral">&quot;   gl_Position.y+=5;\n&quot;</span></div>
+<div class="line">    <span class="stringliteral">&quot;   gl_Position.y+=(size*2);\n&quot;</span></div>
 <div class="line">    <span class="stringliteral">&quot;   EmitVertex();\n&quot;</span></div>
-<div class="line">    <span class="stringliteral">&quot;   gl_Position.x+=5;\n&quot;</span></div>
-<div class="line">    <span class="stringliteral">&quot;   gl_Position.y-=5;\n&quot;</span></div>
+<div class="line">    <span class="stringliteral">&quot;   gl_Position.x+=(size*2);\n&quot;</span></div>
+<div class="line">    <span class="stringliteral">&quot;   gl_Position.y-=(size*2);\n&quot;</span></div>
 <div class="line">    <span class="stringliteral">&quot;   EmitVertex();\n&quot;</span></div>
-<div class="line">    <span class="stringliteral">&quot;   gl_Position.y+=5;\n&quot;</span></div>
+<div class="line">    <span class="stringliteral">&quot;   gl_Position.y+=(size*2);\n&quot;</span></div>
 <div class="line">    <span class="stringliteral">&quot;   EmitVertex();\n&quot;</span></div>
 <div class="line">    <span class="stringliteral">&quot;   EndPrimitive();\n&quot;</span></div>
 <div class="line">    <span class="stringliteral">&quot;}\n&quot;</span></div>
 </div><!-- fragment -->
 <p>Emits a square partictle or unit size 5 from the input point. </p>
 <p>Takes the input point and uses triangle_strip to construct a square around this point </p>
-<dl class="bug"><dt><b><a class="el" href="bug.html#_bug000002">Bug:</a></b></dt><dd>Square is not emitted centrally from the point but from the bottom left corner </dd></dl>
 
 </div>
 </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Mar 12 2013 22:31:51 for cuSwarm by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Mar 25 2013 23:35:47 for cuSwarm by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.3
 </small></address>

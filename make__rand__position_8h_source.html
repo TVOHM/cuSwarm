@@ -98,7 +98,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div>
 <div class="line"><a name="l00010"></a><span class="lineno"><a class="code" href="structmake__rand__position.html">   10</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structmake__rand__position.html" title="A Fuctor used to generate random position vectors between 0 and max_position.">make_rand_position</a></div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;{</div>
-<div class="line"><a name="l00013"></a><span class="lineno"><a class="code" href="structmake__rand__position.html#a4e59e2d1218963e3e0b7879a0ed06da8">   13</a></span>&#160;    <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="classtest.html">test</a>;</div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="code" href="structmake__rand__position.html#a4e59e2d1218963e3e0b7879a0ed06da8">   13</a></span>&#160;    <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="classtest.html" title="Test class encapsulating the testing framework.">test</a>;</div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div>
 <div class="line"><a name="l00019"></a><span class="lineno"><a class="code" href="structmake__rand__position.html#af941b6cceb14b6301c5affe2b7b5acfe">   19</a></span>&#160;    <a class="code" href="structmake__rand__position.html#af941b6cceb14b6301c5affe2b7b5acfe" title="Creates a new make_rand_position object.">make_rand_position</a>(<a class="code" href="structconfig.html" title="Contains all of the simulation parameters.">config</a> cfg) : <a class="code" href="structmake__rand__position.html#a9f2f3a34e05b6924e7f7d14d10d7ad3c" title="The maximum value of any dimension of the position as defined by max_position in the config object...">max</a>(cfg.max_position) { }</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div>
@@ -106,9 +106,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    {</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        float4 f4;</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        f4.w = 0.0f;</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        f4.x = (float)rand()/((float)RAND_MAX/<a class="code" href="structmake__rand__position.html#a9f2f3a34e05b6924e7f7d14d10d7ad3c" title="The maximum value of any dimension of the position as defined by max_position in the config object...">max</a>);</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        f4.y = (float)rand()/((float)RAND_MAX/<a class="code" href="structmake__rand__position.html#a9f2f3a34e05b6924e7f7d14d10d7ad3c" title="The maximum value of any dimension of the position as defined by max_position in the config object...">max</a>);</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        f4.z = (float)rand()/((float)RAND_MAX/<a class="code" href="structmake__rand__position.html#a9f2f3a34e05b6924e7f7d14d10d7ad3c" title="The maximum value of any dimension of the position as defined by max_position in the config object...">max</a>);</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        f4.x = 0 + (float)rand()/((float)RAND_MAX/((<a class="code" href="structmake__rand__position.html#a9f2f3a34e05b6924e7f7d14d10d7ad3c" title="The maximum value of any dimension of the position as defined by max_position in the config object...">max</a>-1) - 0));</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        f4.y = 0 + (float)rand()/((float)RAND_MAX/((<a class="code" href="structmake__rand__position.html#a9f2f3a34e05b6924e7f7d14d10d7ad3c" title="The maximum value of any dimension of the position as defined by max_position in the config object...">max</a>-1) - 0));</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        f4.z = 0 + (float)rand()/((float)RAND_MAX/((<a class="code" href="structmake__rand__position.html#a9f2f3a34e05b6924e7f7d14d10d7ad3c" title="The maximum value of any dimension of the position as defined by max_position in the config object...">max</a>-1) - 0));</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        <span class="keywordflow">return</span> f4;</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    }</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
@@ -119,7 +119,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Mar 12 2013 22:31:51 for cuSwarm by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Mar 25 2013 23:35:47 for cuSwarm by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.3
 </small></address>

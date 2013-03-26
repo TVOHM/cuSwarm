@@ -87,76 +87,193 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="classtest-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">test Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Test class encapsulating the testing framework.  
+ <a href="classtest.html#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ab1e41804c91b3ec9e3be5d1ec0a8a382"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtest.html#ab1e41804c91b3ec9e3be5d1ec0a8a382">calculate_position_functionalityTest</a> ()</td></tr>
-<tr class="memdesc:ab1e41804c91b3ec9e3be5d1ec0a8a382"><td class="mdescLeft">&#160;</td><td class="mdescRight">Functionality test for <a class="el" href="structcalculate__position.html" title="A functor used to calculate the boids new position using the GPU.">calculate_position</a> operation.  <a href="#ab1e41804c91b3ec9e3be5d1ec0a8a382"></a><br/></td></tr>
-<tr class="separator:ab1e41804c91b3ec9e3be5d1ec0a8a382"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab42d5ece712d716b04cb3f686f297a26"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtest.html#ab42d5ece712d716b04cb3f686f297a26">test</a> ()</td></tr>
+<tr class="memdesc:ab42d5ece712d716b04cb3f686f297a26"><td class="mdescLeft">&#160;</td><td class="mdescRight">Instanciating a test class causes all tests to run.  <a href="#ab42d5ece712d716b04cb3f686f297a26"></a><br/></td></tr>
+<tr class="separator:ab42d5ece712d716b04cb3f686f297a26"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a77f4d52bd979ac67d19fe6af9dcb92da"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtest.html#a77f4d52bd979ac67d19fe6af9dcb92da">equals</a> (const float4 &amp;first, const float4 &amp;second)</td></tr>
+<tr class="memdesc:a77f4d52bd979ac67d19fe6af9dcb92da"><td class="mdescLeft">&#160;</td><td class="mdescRight">Utility float4 comparison function, allows for a margin of error on any value of 0.001.  <a href="#a77f4d52bd979ac67d19fe6af9dcb92da"></a><br/></td></tr>
+<tr class="separator:a77f4d52bd979ac67d19fe6af9dcb92da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae52f1b057f81ffa8e3b6e20904de28a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtest.html#aae52f1b057f81ffa8e3b6e20904de28a">equals</a> (const int4 &amp;first, const int4 &amp;second)</td></tr>
+<tr class="memdesc:aae52f1b057f81ffa8e3b6e20904de28a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Utility int4 comparison function.  <a href="#aae52f1b057f81ffa8e3b6e20904de28a"></a><br/></td></tr>
+<tr class="separator:aae52f1b057f81ffa8e3b6e20904de28a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49cd6be6e04953f0e5dd2b3ef4b3f7f4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtest.html#a49cd6be6e04953f0e5dd2b3ef4b3f7f4">reliabilityTest_R1</a> ()</td></tr>
+<tr class="memdesc:a49cd6be6e04953f0e5dd2b3ef4b3f7f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tests reliability requirement R1 - simulate 2,500 agents over 648,000 frames without failure - checks validity of simulation data at end of test.  <a href="#a49cd6be6e04953f0e5dd2b3ef4b3f7f4"></a><br/></td></tr>
+<tr class="separator:a49cd6be6e04953f0e5dd2b3ef4b3f7f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac6c5ed4969f66e653549ffb203957187"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtest.html#ac6c5ed4969f66e653549ffb203957187">reliabilityTest_R2</a> ()</td></tr>
+<tr class="memdesc:ac6c5ed4969f66e653549ffb203957187"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tests that a large number of agents and cells can be created without failure.  <a href="#ac6c5ed4969f66e653549ffb203957187"></a><br/></td></tr>
+<tr class="separator:ac6c5ed4969f66e653549ffb203957187"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4cc64de25a70783dad7bfbe63a0f0a42"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtest.html#a4cc64de25a70783dad7bfbe63a0f0a42">calculate_position_constructor</a> ()</td></tr>
+<tr class="memdesc:a4cc64de25a70783dad7bfbe63a0f0a42"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a <a class="el" href="structcalculate__position.html" title="A functor used to calculate the boids new position using the GPU.">calculate_position</a> struct and verifies the initial values are correct.  <a href="#a4cc64de25a70783dad7bfbe63a0f0a42"></a><br/></td></tr>
+<tr class="separator:a4cc64de25a70783dad7bfbe63a0f0a42"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a392ea92893974c7b1cf9a838f7052015"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtest.html#a392ea92893974c7b1cf9a838f7052015">calculate_position_operator</a> ()</td></tr>
+<tr class="memdesc:a392ea92893974c7b1cf9a838f7052015"><td class="mdescLeft">&#160;</td><td class="mdescRight">Asserts the functor call moves a boid correctly. Tests a normal case boid and an extreme case boid.  <a href="#a392ea92893974c7b1cf9a838f7052015"></a><br/></td></tr>
+<tr class="separator:a392ea92893974c7b1cf9a838f7052015"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a45832859e16ad994e8c2f481b2ca891c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtest.html#a45832859e16ad994e8c2f481b2ca891c">calculate_position_applyAcceleration</a> ()</td></tr>
-<tr class="memdesc:a45832859e16ad994e8c2f481b2ca891c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unit test for <a class="el" href="structcalculate__position.html" title="A functor used to calculate the boids new position using the GPU.">calculate_position</a> struct applying acceleration to velocity.  <a href="#a45832859e16ad994e8c2f481b2ca891c"></a><br/></td></tr>
+<tr class="memdesc:a45832859e16ad994e8c2f481b2ca891c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Applies an acceleration to a velocity and verifies the result is correct. Test all cases (negative+negative, positive+positive, negative+positive)  <a href="#a45832859e16ad994e8c2f481b2ca891c"></a><br/></td></tr>
 <tr class="separator:a45832859e16ad994e8c2f481b2ca891c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7019bfe36219ad16933a8e1bb701be42"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtest.html#a7019bfe36219ad16933a8e1bb701be42">calculate_position_capVelocity</a> ()</td></tr>
-<tr class="memdesc:a7019bfe36219ad16933a8e1bb701be42"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unit test for <a class="el" href="structcalculate__position.html" title="A functor used to calculate the boids new position using the GPU.">calculate_position</a> struct to correctly apply velocity cap.  <a href="#a7019bfe36219ad16933a8e1bb701be42"></a><br/></td></tr>
+<tr class="memdesc:a7019bfe36219ad16933a8e1bb701be42"><td class="mdescLeft">&#160;</td><td class="mdescRight">Applies an invalid and a valid (large and small) velocity and asserts the valid one remains unchanged and the invalid one gets scaled correctly.  <a href="#a7019bfe36219ad16933a8e1bb701be42"></a><br/></td></tr>
 <tr class="separator:a7019bfe36219ad16933a8e1bb701be42"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5ed7137c597e965c59032a090541c839"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtest.html#a5ed7137c597e965c59032a090541c839">calculate_position_applyVelocity</a> ()</td></tr>
-<tr class="memdesc:a5ed7137c597e965c59032a090541c839"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unit test for <a class="el" href="structcalculate__position.html" title="A functor used to calculate the boids new position using the GPU.">calculate_position</a> struct to correctly apply velocity to the current position.  <a href="#a5ed7137c597e965c59032a090541c839"></a><br/></td></tr>
+<tr class="memdesc:a5ed7137c597e965c59032a090541c839"><td class="mdescLeft">&#160;</td><td class="mdescRight">Applies a velcocity to a position and verifies the result is correct. Test all cases (negative+negative, positive+positive, negative+positive)  <a href="#a5ed7137c597e965c59032a090541c839"></a><br/></td></tr>
 <tr class="separator:a5ed7137c597e965c59032a090541c839"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3c02463046cf2ae699bbd1b6e8271191"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtest.html#a3c02463046cf2ae699bbd1b6e8271191">calculate_position_applyWorldBounds</a> ()</td></tr>
-<tr class="memdesc:a3c02463046cf2ae699bbd1b6e8271191"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unit test for <a class="el" href="structcalculate__position.html" title="A functor used to calculate the boids new position using the GPU.">calculate_position</a> struct to correctly ensure all boids remain within the world bounds.  <a href="#a3c02463046cf2ae699bbd1b6e8271191"></a><br/></td></tr>
+<tr class="memdesc:a3c02463046cf2ae699bbd1b6e8271191"><td class="mdescLeft">&#160;</td><td class="mdescRight">Validates that a valid positition is not modified and that too high and too low positions are spawned on the opposite side of the world.  <a href="#a3c02463046cf2ae699bbd1b6e8271191"></a><br/></td></tr>
 <tr class="separator:a3c02463046cf2ae699bbd1b6e8271191"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a55c0e3da1cf4aa671fd73fe1085c65b0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtest.html#a55c0e3da1cf4aa671fd73fe1085c65b0">calculate_position_calculateCellIndex</a> ()</td></tr>
-<tr class="memdesc:a55c0e3da1cf4aa671fd73fe1085c65b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unit test for <a class="el" href="structcalculate__position.html" title="A functor used to calculate the boids new position using the GPU.">calculate_position</a> struct to assign correct cell indexes.  <a href="#a55c0e3da1cf4aa671fd73fe1085c65b0"></a><br/></td></tr>
+<tr class="memdesc:a55c0e3da1cf4aa671fd73fe1085c65b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks valid, invalid too low and invalid too high positions are correctly allocated a cell index. Low and high should be corrected into nearest cell.  <a href="#a55c0e3da1cf4aa671fd73fe1085c65b0"></a><br/></td></tr>
 <tr class="separator:a55c0e3da1cf4aa671fd73fe1085c65b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5eea1aa207033a5d88406860457eac4b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtest.html#a5eea1aa207033a5d88406860457eac4b">make_rand_position</a> ()</td></tr>
-<tr class="memdesc:a5eea1aa207033a5d88406860457eac4b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unit test for <a class="el" href="structmake__rand__position.html" title="A Fuctor used to generate random position vectors between 0 and max_position.">make_rand_position</a> to ensure generated positions are within bounds.  <a href="#a5eea1aa207033a5d88406860457eac4b"></a><br/></td></tr>
-<tr class="separator:a5eea1aa207033a5d88406860457eac4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2de973fa05f85a7d6d550d0b467c0244"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtest.html#a2de973fa05f85a7d6d550d0b467c0244">make_rand_velocity</a> ()</td></tr>
-<tr class="memdesc:a2de973fa05f85a7d6d550d0b467c0244"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unit test for <a class="el" href="structmake__rand__velocity.html" title="A Fuctor used to generate random velocity vectors between 0 and max_position.">make_rand_velocity</a> to ensure generated velocities are within bounds.  <a href="#a2de973fa05f85a7d6d550d0b467c0244"></a><br/></td></tr>
-<tr class="separator:a2de973fa05f85a7d6d550d0b467c0244"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6004ab2140e29e474617b8417d23a0d4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtest.html#a6004ab2140e29e474617b8417d23a0d4">camera_keyDown</a> ()</td></tr>
-<tr class="memdesc:a6004ab2140e29e474617b8417d23a0d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unit test for camera keyDown function to ensure it correctly sets to corresponding key to false.  <a href="#a6004ab2140e29e474617b8417d23a0d4"></a><br/></td></tr>
-<tr class="separator:a6004ab2140e29e474617b8417d23a0d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa2129dee8ae06d568a95897e7102222c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtest.html#aa2129dee8ae06d568a95897e7102222c">camera_keyUp</a> ()</td></tr>
-<tr class="memdesc:aa2129dee8ae06d568a95897e7102222c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unit test for camera keyDown function to ensure it correctly sets to corresponding key to true.  <a href="#aa2129dee8ae06d568a95897e7102222c"></a><br/></td></tr>
-<tr class="separator:aa2129dee8ae06d568a95897e7102222c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4f4a0a180f452be585c8c397be19ffb6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtest.html#a4f4a0a180f452be585c8c397be19ffb6">camera_Update</a> ()</td></tr>
-<tr class="memdesc:a4f4a0a180f452be585c8c397be19ffb6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unit test for <a class="el" href="structmake__rand__velocity.html" title="A Fuctor used to generate random velocity vectors between 0 and max_position.">make_rand_velocity</a> to ensure generated velocities are within bounds.  <a href="#a4f4a0a180f452be585c8c397be19ffb6"></a><br/></td></tr>
-<tr class="separator:a4f4a0a180f452be585c8c397be19ffb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaa904e5083dba27111a886d86c362061"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtest.html#aaa904e5083dba27111a886d86c362061">camera_look</a> ()</td></tr>
-<tr class="memdesc:aaa904e5083dba27111a886d86c362061"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unit test for camera look function to ensure it correctly modifies the camera orientation.  <a href="#aaa904e5083dba27111a886d86c362061"></a><br/></td></tr>
-<tr class="separator:aaa904e5083dba27111a886d86c362061"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acc02c95def2c96453901c5d5cbfe12d2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtest.html#acc02c95def2c96453901c5d5cbfe12d2">camera_move</a> ()</td></tr>
-<tr class="memdesc:acc02c95def2c96453901c5d5cbfe12d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unit test for camera move function to ensure it correctly moves the camera.  <a href="#acc02c95def2c96453901c5d5cbfe12d2"></a><br/></td></tr>
-<tr class="separator:acc02c95def2c96453901c5d5cbfe12d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac165ba22cbf5b9b7afaa0331be56bc96"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtest.html#ac165ba22cbf5b9b7afaa0331be56bc96">camera_reloadConfig</a> ()</td></tr>
-<tr class="memdesc:ac165ba22cbf5b9b7afaa0331be56bc96"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unit test for camera reloadConfig function to ensure it correctly reloads a config file.  <a href="#ac165ba22cbf5b9b7afaa0331be56bc96"></a><br/></td></tr>
-<tr class="separator:ac165ba22cbf5b9b7afaa0331be56bc96"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:accd3a3727d55ff6f0a5697c5acff4029"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtest.html#accd3a3727d55ff6f0a5697c5acff4029">calculate_steering_constructor</a> ()</td></tr>
+<tr class="memdesc:accd3a3727d55ff6f0a5697c5acff4029"><td class="mdescLeft">&#160;</td><td class="mdescRight">Validate the structure is created as expected, all memory points to the right palce and settings are correct.  <a href="#accd3a3727d55ff6f0a5697c5acff4029"></a><br/></td></tr>
+<tr class="separator:accd3a3727d55ff6f0a5697c5acff4029"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a59c8123198068910ed4c7b222e13e07a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtest.html#a59c8123198068910ed4c7b222e13e07a">calculate_steering_operator</a> ()</td></tr>
+<tr class="memdesc:a59c8123198068910ed4c7b222e13e07a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks the functor correctly identifies only nearby boids and applies the correct steering forces.  <a href="#a59c8123198068910ed4c7b222e13e07a"></a><br/></td></tr>
+<tr class="separator:a59c8123198068910ed4c7b222e13e07a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1bd13fc011200f23725286e5ad4d94d6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtest.html#a1bd13fc011200f23725286e5ad4d94d6">calculate_steering_calculateCell</a> ()</td></tr>
+<tr class="memdesc:a1bd13fc011200f23725286e5ad4d94d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks valid, invalid too low and invalid too high positions are correctly allocated a cell index. Low and high should be corrected into nearest cell.  <a href="#a1bd13fc011200f23725286e5ad4d94d6"></a><br/></td></tr>
+<tr class="separator:a1bd13fc011200f23725286e5ad4d94d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc933a2df82c13703d4dba08117310fe"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtest.html#adc933a2df82c13703d4dba08117310fe">calculate_steering_calculateAcceleration</a> ()</td></tr>
+<tr class="memdesc:adc933a2df82c13703d4dba08117310fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Validates that the behaviours are correctly summed and capped into an acceleration value. Tests a normal and a too high value.  <a href="#adc933a2df82c13703d4dba08117310fe"></a><br/></td></tr>
+<tr class="separator:adc933a2df82c13703d4dba08117310fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d5c1214c50ca1487972be36ccfe28ad"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtest.html#a2d5c1214c50ca1487972be36ccfe28ad">calculate_steering_calculateCohesion</a> ()</td></tr>
+<tr class="memdesc:a2d5c1214c50ca1487972be36ccfe28ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tests the calculations for the cohesion behaviour - validates 0 case and non zero case.  <a href="#a2d5c1214c50ca1487972be36ccfe28ad"></a><br/></td></tr>
+<tr class="separator:a2d5c1214c50ca1487972be36ccfe28ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a05634afd2b8083048a203eb5734a3d80"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtest.html#a05634afd2b8083048a203eb5734a3d80">calculate_steering_calculateAlignment</a> ()</td></tr>
+<tr class="memdesc:a05634afd2b8083048a203eb5734a3d80"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tests the calculations for the cohesion behaviour - validates 0 case and non zero case.  <a href="#a05634afd2b8083048a203eb5734a3d80"></a><br/></td></tr>
+<tr class="separator:a05634afd2b8083048a203eb5734a3d80"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad1974af2fb94b4280853a5cbcacf3e38"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtest.html#ad1974af2fb94b4280853a5cbcacf3e38">config_constructor</a> ()</td></tr>
-<tr class="memdesc:ad1974af2fb94b4280853a5cbcacf3e38"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unit test for config constructor to ensure it correctly initialises to default values.  <a href="#ad1974af2fb94b4280853a5cbcacf3e38"></a><br/></td></tr>
+<tr class="memdesc:ad1974af2fb94b4280853a5cbcacf3e38"><td class="mdescLeft">&#160;</td><td class="mdescRight">Validates the configuration objects default values are as expected.  <a href="#ad1974af2fb94b4280853a5cbcacf3e38"></a><br/></td></tr>
 <tr class="separator:ad1974af2fb94b4280853a5cbcacf3e38"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad064be27cf0fc958a46897eae671eb23"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtest.html#ad064be27cf0fc958a46897eae671eb23">config_num_cells</a> ()</td></tr>
-<tr class="memdesc:ad064be27cf0fc958a46897eae671eb23"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unit test for config num_cells to ensure it correctly calculates the cubic volume of the simulation in cells.  <a href="#ad064be27cf0fc958a46897eae671eb23"></a><br/></td></tr>
+<tr class="memdesc:ad064be27cf0fc958a46897eae671eb23"><td class="mdescLeft">&#160;</td><td class="mdescRight">Validates the configuration object correctly calculates its number of cells.  <a href="#ad064be27cf0fc958a46897eae671eb23"></a><br/></td></tr>
 <tr class="separator:ad064be27cf0fc958a46897eae671eb23"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a03a23d180ed3362b7001cbbdd863ec10"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtest.html#a03a23d180ed3362b7001cbbdd863ec10">config_cell_size</a> ()</td></tr>
-<tr class="memdesc:a03a23d180ed3362b7001cbbdd863ec10"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unit test for config cell_size to ensure it correctly calculates the cubic volume of the simulation in cells.  <a href="#a03a23d180ed3362b7001cbbdd863ec10"></a><br/></td></tr>
+<tr class="memdesc:a03a23d180ed3362b7001cbbdd863ec10"><td class="mdescLeft">&#160;</td><td class="mdescRight">Validates the configuration object correctly calculates the size of its cells.  <a href="#a03a23d180ed3362b7001cbbdd863ec10"></a><br/></td></tr>
 <tr class="separator:a03a23d180ed3362b7001cbbdd863ec10"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1d57daf71c9b4498873d17b018471f92"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtest.html#a1d57daf71c9b4498873d17b018471f92">config_max_radius</a> ()</td></tr>
-<tr class="memdesc:a1d57daf71c9b4498873d17b018471f92"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unit test for config max_radius to ensure it correctly calculates the maximum radius.  <a href="#a1d57daf71c9b4498873d17b018471f92"></a><br/></td></tr>
+<tr class="memdesc:a1d57daf71c9b4498873d17b018471f92"><td class="mdescLeft">&#160;</td><td class="mdescRight">Validates the configuration object correctly calculates the maximum radius for the.  <a href="#a1d57daf71c9b4498873d17b018471f92"></a><br/></td></tr>
 <tr class="separator:a1d57daf71c9b4498873d17b018471f92"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9d58b7f1bcb2152841399a43347feff8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtest.html#a9d58b7f1bcb2152841399a43347feff8">config_cell_radius</a> ()</td></tr>
-<tr class="memdesc:a9d58b7f1bcb2152841399a43347feff8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unit test for config cell_radius to ensure it correctly calculates the cell radius of boid behaviour.  <a href="#a9d58b7f1bcb2152841399a43347feff8"></a><br/></td></tr>
+<tr class="memdesc:a9d58b7f1bcb2152841399a43347feff8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Validates the configuration object correctly calculates the cell radius for the boids.  <a href="#a9d58b7f1bcb2152841399a43347feff8"></a><br/></td></tr>
 <tr class="separator:a9d58b7f1bcb2152841399a43347feff8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a30bce8028fb5e351cff98e3601804627"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtest.html#a30bce8028fb5e351cff98e3601804627">make_rand_position_constructor</a> ()</td></tr>
+<tr class="memdesc:a30bce8028fb5e351cff98e3601804627"><td class="mdescLeft">&#160;</td><td class="mdescRight">Validate the constructor initialises the struct with the correct values.  <a href="#a30bce8028fb5e351cff98e3601804627"></a><br/></td></tr>
+<tr class="separator:a30bce8028fb5e351cff98e3601804627"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a93a3ea1ed501fb9cceab0f7845d37707"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtest.html#a93a3ea1ed501fb9cceab0f7845d37707">make_rand_position_operator</a> ()</td></tr>
+<tr class="memdesc:a93a3ea1ed501fb9cceab0f7845d37707"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate 100,000 velocities and assert they all fall in range.  <a href="#a93a3ea1ed501fb9cceab0f7845d37707"></a><br/></td></tr>
+<tr class="separator:a93a3ea1ed501fb9cceab0f7845d37707"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1703135dc8c930d76581c972478a8032"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtest.html#a1703135dc8c930d76581c972478a8032">make_rand_velocity_constructor</a> ()</td></tr>
+<tr class="memdesc:a1703135dc8c930d76581c972478a8032"><td class="mdescLeft">&#160;</td><td class="mdescRight">Validate the constructor initialises the struct with the correct values.  <a href="#a1703135dc8c930d76581c972478a8032"></a><br/></td></tr>
+<tr class="separator:a1703135dc8c930d76581c972478a8032"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2bceee96a871d1e9b75bcdc30d2f7e7b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtest.html#a2bceee96a871d1e9b75bcdc30d2f7e7b">make_rand_velocity_operator</a> ()</td></tr>
+<tr class="memdesc:a2bceee96a871d1e9b75bcdc30d2f7e7b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate 100,000 velocities and assert they all fall in range.  <a href="#a2bceee96a871d1e9b75bcdc30d2f7e7b"></a><br/></td></tr>
+<tr class="separator:a2bceee96a871d1e9b75bcdc30d2f7e7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a19bd1cb578249e264c7f8c01afb014ed"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtest.html#a19bd1cb578249e264c7f8c01afb014ed">simulation_constructor</a> ()</td></tr>
+<tr class="memdesc:a19bd1cb578249e264c7f8c01afb014ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Validates skipthink phase is initlaised to 0 - cannot test for cuda throw on this machine.  <a href="#a19bd1cb578249e264c7f8c01afb014ed"></a><br/></td></tr>
+<tr class="separator:a19bd1cb578249e264c7f8c01afb014ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a97532420df8810591f2ecc6905a7f424"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtest.html#a97532420df8810591f2ecc6905a7f424">simulation_getPositions</a> ()</td></tr>
+<tr class="memdesc:a97532420df8810591f2ecc6905a7f424"><td class="mdescLeft">&#160;</td><td class="mdescRight">Spawns a 100000 boids in the simulation and validaties the positions can be retrieved.  <a href="#a97532420df8810591f2ecc6905a7f424"></a><br/></td></tr>
+<tr class="separator:a97532420df8810591f2ecc6905a7f424"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4705cc5befb19aae68ea3666165d7c1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtest.html#af4705cc5befb19aae68ea3666165d7c1">simulation_getVelocities</a> ()</td></tr>
+<tr class="memdesc:af4705cc5befb19aae68ea3666165d7c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Spawns a 100000 boids in the simulation and validaties the velocities can be retrieved.  <a href="#af4705cc5befb19aae68ea3666165d7c1"></a><br/></td></tr>
+<tr class="separator:af4705cc5befb19aae68ea3666165d7c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73f37257d7d1d1fadce1362869710210"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtest.html#a73f37257d7d1d1fadce1362869710210">simulation_getAccelerations</a> ()</td></tr>
+<tr class="memdesc:a73f37257d7d1d1fadce1362869710210"><td class="mdescLeft">&#160;</td><td class="mdescRight">Spawns a 100000 boids in the simulation and validaties the accelerations can be retrieved.  <a href="#a73f37257d7d1d1fadce1362869710210"></a><br/></td></tr>
+<tr class="separator:a73f37257d7d1d1fadce1362869710210"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd57fdad2f0fb1ec2db975600a77b4aa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtest.html#abd57fdad2f0fb1ec2db975600a77b4aa">simulation_getConfig</a> ()</td></tr>
+<tr class="memdesc:abd57fdad2f0fb1ec2db975600a77b4aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Validates the correct config is returned.  <a href="#abd57fdad2f0fb1ec2db975600a77b4aa"></a><br/></td></tr>
+<tr class="separator:abd57fdad2f0fb1ec2db975600a77b4aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab89f794c9181365259d7702566a40dd1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtest.html#ab89f794c9181365259d7702566a40dd1">simulation_setConfig</a> ()</td></tr>
+<tr class="memdesc:ab89f794c9181365259d7702566a40dd1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tests all valid and invalid inputs for a config object and validates errors are thrown in invalid cases.  <a href="#ab89f794c9181365259d7702566a40dd1"></a><br/></td></tr>
+<tr class="separator:ab89f794c9181365259d7702566a40dd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae6fdc796b72ac76854d76285429b4498"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtest.html#ae6fdc796b72ac76854d76285429b4498">simulation_phaseBegin</a> ()</td></tr>
+<tr class="memdesc:ae6fdc796b72ac76854d76285429b4498"><td class="mdescLeft">&#160;</td><td class="mdescRight">Asserts that the phase begin value of skipthink is correct.  <a href="#ae6fdc796b72ac76854d76285429b4498"></a><br/></td></tr>
+<tr class="separator:ae6fdc796b72ac76854d76285429b4498"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c57ba48fc000b12587f85cc16983212"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtest.html#a6c57ba48fc000b12587f85cc16983212">simulation_phaseEnd</a> ()</td></tr>
+<tr class="memdesc:a6c57ba48fc000b12587f85cc16983212"><td class="mdescLeft">&#160;</td><td class="mdescRight">Asserts that the phase begin value of skipthink is correct - for both a remaineder and a non-remainder scenario.  <a href="#a6c57ba48fc000b12587f85cc16983212"></a><br/></td></tr>
+<tr class="separator:a6c57ba48fc000b12587f85cc16983212"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2530de530b7e2d39b62729ca326d76ce"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtest.html#a2530de530b7e2d39b62729ca326d76ce">simulation_updatePhase</a> ()</td></tr>
+<tr class="memdesc:a2530de530b7e2d39b62729ca326d76ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Asserts function correctly loops phase back upon completion.  <a href="#a2530de530b7e2d39b62729ca326d76ce"></a><br/></td></tr>
+<tr class="separator:a2530de530b7e2d39b62729ca326d76ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a281d98d70e2dbdd474779ceb29df383d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtest.html#a281d98d70e2dbdd474779ceb29df383d">simulation_initialisePositions</a> ()</td></tr>
+<tr class="memdesc:a281d98d70e2dbdd474779ceb29df383d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vaidates call can correctly spawn and despawn 1000000 agent positions.  <a href="#a281d98d70e2dbdd474779ceb29df383d"></a><br/></td></tr>
+<tr class="separator:a281d98d70e2dbdd474779ceb29df383d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9585af1157453cac1c4fed452f3b27d2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtest.html#a9585af1157453cac1c4fed452f3b27d2">simulation_initialiseVelocities</a> ()</td></tr>
+<tr class="memdesc:a9585af1157453cac1c4fed452f3b27d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vaidates call can correctly spawn and despawn 1000000 agent velocities.  <a href="#a9585af1157453cac1c4fed452f3b27d2"></a><br/></td></tr>
+<tr class="separator:a9585af1157453cac1c4fed452f3b27d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea56fa056f160ed653fe2e61ec1074d7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtest.html#aea56fa056f160ed653fe2e61ec1074d7">simulation_initialiseAccelerations</a> ()</td></tr>
+<tr class="memdesc:aea56fa056f160ed653fe2e61ec1074d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vaidates call can correctly spawn and despawn 1000000 agent accelerations.  <a href="#aea56fa056f160ed653fe2e61ec1074d7"></a><br/></td></tr>
+<tr class="separator:aea56fa056f160ed653fe2e61ec1074d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1628e9f0bb6e8018c6cc6a107f2ba4e1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtest.html#a1628e9f0bb6e8018c6cc6a107f2ba4e1">simulation_initialiseCellSizes</a> ()</td></tr>
+<tr class="memdesc:a1628e9f0bb6e8018c6cc6a107f2ba4e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vaidates call can correctly spawn and despawn 125000 cells.  <a href="#a1628e9f0bb6e8018c6cc6a107f2ba4e1"></a><br/></td></tr>
+<tr class="separator:a1628e9f0bb6e8018c6cc6a107f2ba4e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ae3092d8a0eec2247291f9f619d9974"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtest.html#a8ae3092d8a0eec2247291f9f619d9974">simulation_initialiseCellIndexes</a> ()</td></tr>
+<tr class="memdesc:a8ae3092d8a0eec2247291f9f619d9974"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vaidates call can correctly spawn and despawn 1000000 agent cell indexes.  <a href="#a8ae3092d8a0eec2247291f9f619d9974"></a><br/></td></tr>
+<tr class="separator:a8ae3092d8a0eec2247291f9f619d9974"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f132f637e2398a4cbb1204acb93b43e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtest.html#a4f132f637e2398a4cbb1204acb93b43e">simulation_calculatePositions</a> ()</td></tr>
+<tr class="memdesc:a4f132f637e2398a4cbb1204acb93b43e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Validates the simulation can correctly update a boid position - spawns 250 simulations and tests all agents can be moved once correctly.  <a href="#a4f132f637e2398a4cbb1204acb93b43e"></a><br/></td></tr>
+<tr class="separator:a4f132f637e2398a4cbb1204acb93b43e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b0a427f08308e42336a625425f2f8a4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtest.html#a3b0a427f08308e42336a625425f2f8a4">simulation_sortByCellIndex</a> ()</td></tr>
+<tr class="memdesc:a3b0a427f08308e42336a625425f2f8a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Asserts a sample of boids is correctly sorted by cell index.  <a href="#a3b0a427f08308e42336a625425f2f8a4"></a><br/></td></tr>
+<tr class="separator:a3b0a427f08308e42336a625425f2f8a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c9e020c1e1a4125c48c830afd41f145"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtest.html#a1c9e020c1e1a4125c48c830afd41f145">simulation_calculateCellSizes</a> ()</td></tr>
+<tr class="memdesc:a1c9e020c1e1a4125c48c830afd41f145"><td class="mdescLeft">&#160;</td><td class="mdescRight">Asserts a sample of cells is correctly counted - also checks extreme case of no agents.  <a href="#a1c9e020c1e1a4125c48c830afd41f145"></a><br/></td></tr>
+<tr class="separator:a1c9e020c1e1a4125c48c830afd41f145"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a70eadfbdf986a27169d461a088385146"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtest.html#a70eadfbdf986a27169d461a088385146">simulation_calculateSteerings</a> ()</td></tr>
+<tr class="memdesc:a70eadfbdf986a27169d461a088385146"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generates 250 random simulations with random configurations and implements a steering update and verifies all calculated steerings were correct - also validates skipthink.  <a href="#a70eadfbdf986a27169d461a088385146"></a><br/></td></tr>
+<tr class="separator:a70eadfbdf986a27169d461a088385146"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Test class encapsulating the testing framework. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="ab42d5ece712d716b04cb3f686f297a26"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">test::test </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Instanciating a test class causes all tests to run. </p>
+<dl class="section warning"><dt>Warning</dt><dd>Causes assertion failure on test fail </dd></dl>
+
+</div>
+</div>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="a45832859e16ad994e8c2f481b2ca891c"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void test::calculate_position_applyAcceleration </td>
@@ -165,16 +282,23 @@ Public Member Functions</h2></td></tr>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p>Unit test for <a class="el" href="structcalculate__position.html" title="A functor used to calculate the boids new position using the GPU.">calculate_position</a> struct applying acceleration to velocity. </p>
-<p>Asserts that an arbitrary acceleration applied to an arbitrary velocity equals the correct result </p>
+<p>Applies an acceleration to a velocity and verifies the result is correct. Test all cases (negative+negative, positive+positive, negative+positive) </p>
 
 </div>
 </div>
 <a class="anchor" id="a5ed7137c597e965c59032a090541c839"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void test::calculate_position_applyVelocity </td>
@@ -183,16 +307,23 @@ Public Member Functions</h2></td></tr>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p>Unit test for <a class="el" href="structcalculate__position.html" title="A functor used to calculate the boids new position using the GPU.">calculate_position</a> struct to correctly apply velocity to the current position. </p>
-<p>Asserts that an arbitrary velocity is correctly applied to an arbitrary position </p>
+<p>Applies a velcocity to a position and verifies the result is correct. Test all cases (negative+negative, positive+positive, negative+positive) </p>
 
 </div>
 </div>
 <a class="anchor" id="a3c02463046cf2ae699bbd1b6e8271191"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void test::calculate_position_applyWorldBounds </td>
@@ -201,16 +332,23 @@ Public Member Functions</h2></td></tr>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p>Unit test for <a class="el" href="structcalculate__position.html" title="A functor used to calculate the boids new position using the GPU.">calculate_position</a> struct to correctly ensure all boids remain within the world bounds. </p>
-<p>Asserts that two positions, one inside and one outside an arbitrary max_position value are correctly handled </p>
+<p>Validates that a valid positition is not modified and that too high and too low positions are spawned on the opposite side of the world. </p>
 
 </div>
 </div>
 <a class="anchor" id="a55c0e3da1cf4aa671fd73fe1085c65b0"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void test::calculate_position_calculateCellIndex </td>
@@ -219,17 +357,23 @@ Public Member Functions</h2></td></tr>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p>Unit test for <a class="el" href="structcalculate__position.html" title="A functor used to calculate the boids new position using the GPU.">calculate_position</a> struct to assign correct cell indexes. </p>
-<p>Asserts that an arbitrary position is correctly allocated a cell index </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000004">Todo:</a></b></dt><dd>Add test for invalid index - unsure how to handle this in a functor </dd></dl>
+<p>Checks valid, invalid too low and invalid too high positions are correctly allocated a cell index. Low and high should be corrected into nearest cell. </p>
 
 </div>
 </div>
 <a class="anchor" id="a7019bfe36219ad16933a8e1bb701be42"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void test::calculate_position_capVelocity </td>
@@ -238,144 +382,223 @@ Public Member Functions</h2></td></tr>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p>Unit test for <a class="el" href="structcalculate__position.html" title="A functor used to calculate the boids new position using the GPU.">calculate_position</a> struct to correctly apply velocity cap. </p>
-<p>Asserts that two velocities, one above and one below an arbitrary max_velocity value are correctly handled </p>
+<p>Applies an invalid and a valid (large and small) velocity and asserts the valid one remains unchanged and the invalid one gets scaled correctly. </p>
 
 </div>
 </div>
-<a class="anchor" id="ab1e41804c91b3ec9e3be5d1ec0a8a382"></a>
+<a class="anchor" id="a4cc64de25a70783dad7bfbe63a0f0a42"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void test::calculate_position_functionalityTest </td>
+          <td class="memname">void test::calculate_position_constructor </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p>Functionality test for <a class="el" href="structcalculate__position.html" title="A functor used to calculate the boids new position using the GPU.">calculate_position</a> operation. </p>
-<p>Asserts that for an arbitrary boid, the correct new position is calculated </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000003">Todo:</a></b></dt><dd>Code this function </dd></dl>
+<p>Creates a <a class="el" href="structcalculate__position.html" title="A functor used to calculate the boids new position using the GPU.">calculate_position</a> struct and verifies the initial values are correct. </p>
 
 </div>
 </div>
-<a class="anchor" id="a6004ab2140e29e474617b8417d23a0d4"></a>
+<a class="anchor" id="a392ea92893974c7b1cf9a838f7052015"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void test::camera_keyDown </td>
+          <td class="memname">void test::calculate_position_operator </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p>Unit test for camera keyDown function to ensure it correctly sets to corresponding key to false. </p>
-<p>This tests modifies static data in the keys array, but after test completion it will be returned to the false state. </p>
+<p>Asserts the functor call moves a boid correctly. Tests a normal case boid and an extreme case boid. </p>
 
 </div>
 </div>
-<a class="anchor" id="aa2129dee8ae06d568a95897e7102222c"></a>
+<a class="anchor" id="adc933a2df82c13703d4dba08117310fe"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void test::camera_keyUp </td>
+          <td class="memname">void test::calculate_steering_calculateAcceleration </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p>Unit test for camera keyDown function to ensure it correctly sets to corresponding key to true. </p>
-<p>This test modifies all keys to true and then tests the are correctly reset to false when this function is called. After test completion all keys will be returned to the false state </p>
+<p>Validates that the behaviours are correctly summed and capped into an acceleration value. Tests a normal and a too high value. </p>
 
 </div>
 </div>
-<a class="anchor" id="aaa904e5083dba27111a886d86c362061"></a>
+<a class="anchor" id="a05634afd2b8083048a203eb5734a3d80"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void test::camera_look </td>
+          <td class="memname">void test::calculate_steering_calculateAlignment </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p>Unit test for camera look function to ensure it correctly modifies the camera orientation. </p>
-<p>Also asserts that the camera correctly resets wrapping orientations The camera is returned to the default state after this test is run </p>
+<p>Tests the calculations for the cohesion behaviour - validates 0 case and non zero case. </p>
 
 </div>
 </div>
-<a class="anchor" id="acc02c95def2c96453901c5d5cbfe12d2"></a>
+<a class="anchor" id="a1bd13fc011200f23725286e5ad4d94d6"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void test::camera_move </td>
+          <td class="memname">void test::calculate_steering_calculateCell </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p>Unit test for camera move function to ensure it correctly moves the camera. </p>
-<p>The camera is returned to the default state after this test is run </p>
+<p>Checks valid, invalid too low and invalid too high positions are correctly allocated a cell index. Low and high should be corrected into nearest cell. </p>
 
 </div>
 </div>
-<a class="anchor" id="ac165ba22cbf5b9b7afaa0331be56bc96"></a>
+<a class="anchor" id="a2d5c1214c50ca1487972be36ccfe28ad"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void test::camera_reloadConfig </td>
+          <td class="memname">void test::calculate_steering_calculateCohesion </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p>Unit test for camera reloadConfig function to ensure it correctly reloads a config file. </p>
-<p>A completly invalid config file is loaded and it is asserted that the default values are used instead. Also a non-existant config file is loaded, asserting that default values are still used. </p>
+<p>Tests the calculations for the cohesion behaviour - validates 0 case and non zero case. </p>
 
 </div>
 </div>
-<a class="anchor" id="a4f4a0a180f452be585c8c397be19ffb6"></a>
+<a class="anchor" id="accd3a3727d55ff6f0a5697c5acff4029"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void test::camera_Update </td>
+          <td class="memname">void test::calculate_steering_constructor </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p>Unit test for <a class="el" href="structmake__rand__velocity.html" title="A Fuctor used to generate random velocity vectors between 0 and max_position.">make_rand_velocity</a> to ensure generated velocities are within bounds. </p>
-<p>Asserts that the correct functions are called when the corresponding keys are in a pressed state The camera is returned to the default state after this test is run </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000005">Todo:</a></b></dt><dd>Validate reload call here </dd></dl>
+<p>Validate the structure is created as expected, all memory points to the right palce and settings are correct. </p>
+
+</div>
+</div>
+<a class="anchor" id="a59c8123198068910ed4c7b222e13e07a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void test::calculate_steering_operator </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Checks the functor correctly identifies only nearby boids and applies the correct steering forces. </p>
 
 </div>
 </div>
 <a class="anchor" id="a9d58b7f1bcb2152841399a43347feff8"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void test::config_cell_radius </td>
@@ -384,16 +607,23 @@ Public Member Functions</h2></td></tr>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p>Unit test for config cell_radius to ensure it correctly calculates the cell radius of boid behaviour. </p>
-<p>Creates arbitrary boid behaviour radiuses and cell sizes and asserts the calculated cell radius </p>
+<p>Validates the configuration object correctly calculates the cell radius for the boids. </p>
 
 </div>
 </div>
 <a class="anchor" id="a03a23d180ed3362b7001cbbdd863ec10"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void test::config_cell_size </td>
@@ -402,16 +632,23 @@ Public Member Functions</h2></td></tr>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p>Unit test for config cell_size to ensure it correctly calculates the cubic volume of the simulation in cells. </p>
-<p>Creates an arbitrary cell dimension and world size and asserts the calculated cell size is correct </p>
+<p>Validates the configuration object correctly calculates the size of its cells. </p>
 
 </div>
 </div>
 <a class="anchor" id="ad1974af2fb94b4280853a5cbcacf3e38"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void test::config_constructor </td>
@@ -420,16 +657,23 @@ Public Member Functions</h2></td></tr>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p>Unit test for config constructor to ensure it correctly initialises to default values. </p>
-<p>Loads a config object and asserts all values are as expected </p>
+<p>Validates the configuration objects default values are as expected. </p>
 
 </div>
 </div>
 <a class="anchor" id="a1d57daf71c9b4498873d17b018471f92"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void test::config_max_radius </td>
@@ -438,16 +682,23 @@ Public Member Functions</h2></td></tr>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p>Unit test for config max_radius to ensure it correctly calculates the maximum radius. </p>
-<p>Creates arbitrary boid behaviour radiuses and asserts the calculated max radius is correct </p>
+<p>Validates the configuration object correctly calculates the maximum radius for the. </p>
 
 </div>
 </div>
 <a class="anchor" id="ad064be27cf0fc958a46897eae671eb23"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void test::config_num_cells </td>
@@ -456,46 +707,692 @@ Public Member Functions</h2></td></tr>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p>Unit test for config num_cells to ensure it correctly calculates the cubic volume of the simulation in cells. </p>
-<p>Creates an arbitrary cell dimension and asserts the calculated number of cells is correct </p>
+<p>Validates the configuration object correctly calculates its number of cells. </p>
 
 </div>
 </div>
-<a class="anchor" id="a5eea1aa207033a5d88406860457eac4b"></a>
+<a class="anchor" id="a77f4d52bd979ac67d19fe6af9dcb92da"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void test::make_rand_position </td>
+          <td class="memname">bool test::equals </td>
+          <td>(</td>
+          <td class="paramtype">const float4 &amp;&#160;</td>
+          <td class="paramname"><em>first</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const float4 &amp;&#160;</td>
+          <td class="paramname"><em>second</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Utility float4 comparison function, allows for a margin of error on any value of 0.001. </p>
+
+</div>
+</div>
+<a class="anchor" id="aae52f1b057f81ffa8e3b6e20904de28a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool test::equals </td>
+          <td>(</td>
+          <td class="paramtype">const int4 &amp;&#160;</td>
+          <td class="paramname"><em>first</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int4 &amp;&#160;</td>
+          <td class="paramname"><em>second</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Utility int4 comparison function. </p>
+
+</div>
+</div>
+<a class="anchor" id="a30bce8028fb5e351cff98e3601804627"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void test::make_rand_position_constructor </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p>Unit test for <a class="el" href="structmake__rand__position.html" title="A Fuctor used to generate random position vectors between 0 and max_position.">make_rand_position</a> to ensure generated positions are within bounds. </p>
-<p>Asserts that an arbitrary number of generations falls within the 0 - max range defined in the config </p>
+<p>Validate the constructor initialises the struct with the correct values. </p>
 
 </div>
 </div>
-<a class="anchor" id="a2de973fa05f85a7d6d550d0b467c0244"></a>
+<a class="anchor" id="a93a3ea1ed501fb9cceab0f7845d37707"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void test::make_rand_velocity </td>
+          <td class="memname">void test::make_rand_position_operator </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p>Unit test for <a class="el" href="structmake__rand__velocity.html" title="A Fuctor used to generate random velocity vectors between 0 and max_position.">make_rand_velocity</a> to ensure generated velocities are within bounds. </p>
-<p>Asserts that an arbitrary number of generations falls within the -max -&gt; max range defined in the config </p>
+<p>Generate 100,000 velocities and assert they all fall in range. </p>
+
+</div>
+</div>
+<a class="anchor" id="a1703135dc8c930d76581c972478a8032"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void test::make_rand_velocity_constructor </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Validate the constructor initialises the struct with the correct values. </p>
+
+</div>
+</div>
+<a class="anchor" id="a2bceee96a871d1e9b75bcdc30d2f7e7b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void test::make_rand_velocity_operator </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Generate 100,000 velocities and assert they all fall in range. </p>
+
+</div>
+</div>
+<a class="anchor" id="a49cd6be6e04953f0e5dd2b3ef4b3f7f4"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void test::reliabilityTest_R1 </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Tests reliability requirement R1 - simulate 2,500 agents over 648,000 frames without failure - checks validity of simulation data at end of test. </p>
+
+</div>
+</div>
+<a class="anchor" id="ac6c5ed4969f66e653549ffb203957187"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void test::reliabilityTest_R2 </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Tests that a large number of agents and cells can be created without failure. </p>
+
+</div>
+</div>
+<a class="anchor" id="a1c9e020c1e1a4125c48c830afd41f145"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void test::simulation_calculateCellSizes </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Asserts a sample of cells is correctly counted - also checks extreme case of no agents. </p>
+
+</div>
+</div>
+<a class="anchor" id="a4f132f637e2398a4cbb1204acb93b43e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void test::simulation_calculatePositions </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Validates the simulation can correctly update a boid position - spawns 250 simulations and tests all agents can be moved once correctly. </p>
+<p>Validates the simulation can correctly update a boid position from an abitrary simulation. </p>
+
+</div>
+</div>
+<a class="anchor" id="a70eadfbdf986a27169d461a088385146"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void test::simulation_calculateSteerings </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Generates 250 random simulations with random configurations and implements a steering update and verifies all calculated steerings were correct - also validates skipthink. </p>
+
+</div>
+</div>
+<a class="anchor" id="a19bd1cb578249e264c7f8c01afb014ed"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void test::simulation_constructor </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Validates skipthink phase is initlaised to 0 - cannot test for cuda throw on this machine. </p>
+
+</div>
+</div>
+<a class="anchor" id="a73f37257d7d1d1fadce1362869710210"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void test::simulation_getAccelerations </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Spawns a 100000 boids in the simulation and validaties the accelerations can be retrieved. </p>
+
+</div>
+</div>
+<a class="anchor" id="abd57fdad2f0fb1ec2db975600a77b4aa"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void test::simulation_getConfig </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Validates the correct config is returned. </p>
+
+</div>
+</div>
+<a class="anchor" id="a97532420df8810591f2ecc6905a7f424"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void test::simulation_getPositions </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Spawns a 100000 boids in the simulation and validaties the positions can be retrieved. </p>
+
+</div>
+</div>
+<a class="anchor" id="af4705cc5befb19aae68ea3666165d7c1"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void test::simulation_getVelocities </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Spawns a 100000 boids in the simulation and validaties the velocities can be retrieved. </p>
+
+</div>
+</div>
+<a class="anchor" id="aea56fa056f160ed653fe2e61ec1074d7"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void test::simulation_initialiseAccelerations </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Vaidates call can correctly spawn and despawn 1000000 agent accelerations. </p>
+<p>Check they can be spawned </p>
+
+</div>
+</div>
+<a class="anchor" id="a8ae3092d8a0eec2247291f9f619d9974"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void test::simulation_initialiseCellIndexes </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Vaidates call can correctly spawn and despawn 1000000 agent cell indexes. </p>
+<p>Check they can be spawned </p>
+
+</div>
+</div>
+<a class="anchor" id="a1628e9f0bb6e8018c6cc6a107f2ba4e1"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void test::simulation_initialiseCellSizes </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Vaidates call can correctly spawn and despawn 125000 cells. </p>
+<p>Check they can be spawned </p>
+
+</div>
+</div>
+<a class="anchor" id="a281d98d70e2dbdd474779ceb29df383d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void test::simulation_initialisePositions </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Vaidates call can correctly spawn and despawn 1000000 agent positions. </p>
+<p>Check they can be spawned </p>
+
+</div>
+</div>
+<a class="anchor" id="a9585af1157453cac1c4fed452f3b27d2"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void test::simulation_initialiseVelocities </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Vaidates call can correctly spawn and despawn 1000000 agent velocities. </p>
+<p>Check they can be spawned </p>
+
+</div>
+</div>
+<a class="anchor" id="ae6fdc796b72ac76854d76285429b4498"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void test::simulation_phaseBegin </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Asserts that the phase begin value of skipthink is correct. </p>
+
+</div>
+</div>
+<a class="anchor" id="a6c57ba48fc000b12587f85cc16983212"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void test::simulation_phaseEnd </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Asserts that the phase begin value of skipthink is correct - for both a remaineder and a non-remainder scenario. </p>
+
+</div>
+</div>
+<a class="anchor" id="ab89f794c9181365259d7702566a40dd1"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void test::simulation_setConfig </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Tests all valid and invalid inputs for a config object and validates errors are thrown in invalid cases. </p>
+
+</div>
+</div>
+<a class="anchor" id="a3b0a427f08308e42336a625425f2f8a4"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void test::simulation_sortByCellIndex </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Asserts a sample of boids is correctly sorted by cell index. </p>
+
+</div>
+</div>
+<a class="anchor" id="a2530de530b7e2d39b62729ca326d76ce"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void test::simulation_updatePhase </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Asserts function correctly loops phase back upon completion. </p>
 
 </div>
 </div>
@@ -506,7 +1403,7 @@ Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Mar 12 2013 22:31:51 for cuSwarm by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Mar 25 2013 23:35:47 for cuSwarm by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.3
 </small></address>
